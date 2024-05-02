@@ -28,11 +28,11 @@ we applied hyperparameter tuning on various models from different family and got
 From the tuned models, we perform ensembled classifying using hard-voting and soft-voting to achieved the result:
 
 Ensembled model results:
-Hard-voting classifier accuracy:  0.5824
-Soft-voting classifier accuracy:  0.6373
+- Hard-voting classifier accuracy:  0.5824
+- Soft-voting classifier accuracy:  0.6373
 
 5. [Competition results]([url](https://www.kaggle.com/competitions/cs9856-spotify-classification-problem-2024/leaderboard))
-Hard-voting classifier accuracy: 57.14% <= co-2nd place results
-Soft-voting classifier accuracy: 53.57%
+- Hard-voting classifier accuracy: 57.14% <= co-2nd place results 
+- Soft-voting classifier accuracy: 53.57%
 
 Additional note: 
