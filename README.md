@@ -7,15 +7,11 @@ The given data suffered from the following issues and our solution:
 
 | Issue                           | Solution                                                                                   |
 |---------------------------------|-------------------------------------------------------------------------------------------|
-| Duplicated values              | Remove duplicated values                                                                  |
-| Imbalanced classes             | Rebalanced the weights of each class in the models                                       |
-|                                 | (Considered other methods such as over/under/synthetic sampling but with many classes at |
-|                                 | 1 sample, weight balancing is the optimal solution)                                       |
-| Outliers and skewed distribution | Applied Box-cox transformation on 'spch', 'live', 'dur' columns,                         |
-|                                 | and Yeo-Johnson transformation on "acous" column                                         |
-| Missing values on the labels column | Manually filled out as these are the target features,                                    |
-|                                 | applying any prediction methods on these would just mean switching these values to the   |
-|                                 | test set                                                                                   |
+| Duplicated values               | Remove duplicated values                                                                  |
+| Imbalanced classes              | Rebalanced the weights of each class in the models<br>(Considered other methods such as over/under/synthetic sampling but with many classes at 1 sample, weight balancing is the optimal solution) |
+| Outliers and skewed distribution | Applied Box-cox transformation on 'spch', 'live', 'dur' columns,<br>and Yeo-Johnson transformation on "acous" column |
+| Missing values on the labels column | Manually filled out as these are the target features,<br>applying any prediction methods on these would just mean switching these values to the test set |
+                                                                                 |
 
 
 
