@@ -4,6 +4,7 @@ The competition is strictly focused on performing training using the provided 45
 
 2. EDA 
 The given data suffered from the following issues and our solution:
+
 | Issue                           | Solution                                                                                   |
 |---------------------------------|-------------------------------------------------------------------------------------------|
 | Duplicated values              | Remove duplicated values                                                                  |
@@ -15,6 +16,7 @@ The given data suffered from the following issues and our solution:
 | Missing values on the labels column | Manually filled out as these are the target features,                                    |
 |                                 | applying any prediction methods on these would just mean switching these values to the   |
 |                                 | test set                                                                                   |
+
 
 
 3. Model
