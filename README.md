@@ -17,10 +17,22 @@ The given data suffered from the following issues and our solution:
 | Feature | Feature engineering
 |---------------------------------|-------------------------------------------------------------------------------------------|
 | year | Applied binning every 5 years into 1 period |
-| title | Applied TF-IDF to look for some keywords that specify certain genres |
-| artist | Applied one-hot encoding for the whole name since some artists will be specialized in certain genres |
+| title | Applied TF-IDF to look for some keywords that specify certain genres + SVD to reduce size|
+| artist | Applied one-hot encoding for the whole name since some artists will be specialized in certain genres + SVD to reduce size|
 
-4. 
+4. Models and results
+we applied hyperparameter tuning on various models from different family and got accuracy as below for the 88 classes classification problem: 
 
+![single_model_results](https://github.com/trduc97/Spotify_classification/assets/52210863/496e199d-c1bf-43c6-b9c0-7f2ab81670ca)
+
+From the tuned models, we perform ensembled classifying using hard-voting and soft-voting to achieved the result:
+
+Ensembled model results:
+Hard-voting classifier accuracy:  0.5824
+Soft-voting classifier accuracy:  0.6373
+
+5. [Competition results]([url](https://www.kaggle.com/competitions/cs9856-spotify-classification-problem-2024/leaderboard))
+Hard-voting classifier accuracy: 57.14% <= co-2nd place results
+Soft-voting classifier accuracy: 53.57%
 
 Additional note: 
