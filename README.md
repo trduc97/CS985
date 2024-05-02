@@ -11,11 +11,15 @@ The given data suffered from the following issues and our solution:
 | Imbalanced classes              | Rebalanced the weights of each class in the models<br>(Considered other methods such as over/under/synthetic sampling but with many classes at 1 sample, weight balancing is the optimal solution) |
 | Outliers and skewed distribution | Applied Box-cox transformation on 'spch', 'live', 'dur' columns,<br>and Yeo-Johnson transformation on "acous" column |
 | Missing values on the labels column | Manually filled out as these are the target features,<br>applying any prediction methods on these would just mean switching these values to the test set |
-                                                                                 |
 
+3. Features engineering
 
+| Feature | Feature engineering
+|---------------------------------|-------------------------------------------------------------------------------------------|
+| year | Applied binning every 5 years into 1 period |
+| title | Applied TF-IDF to look for some keywords that specify certain genres |
+| artist | Applied one-hot encoding for the whole name since some artists will be specialized in certain genres |
 
-3. Model
 4. 
 
 
