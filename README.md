@@ -36,3 +36,8 @@ Ensembled model results:
 - Soft-voting classifier accuracy: 53.57%
 
 Additional note: 
+1. On grouping the labels to enhanced classification results
+With 88 groups, in reality we can considered grouping the genre
+
+  
+3. On applying Spotipy to enrich dataset
