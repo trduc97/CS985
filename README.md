@@ -31,14 +31,14 @@ Ensembled model results:
 - Hard-voting classifier accuracy:  0.5824
 - Soft-voting classifier accuracy:  0.6373
 
-5. [Competition results]([url](https://www.kaggle.com/competitions/cs9856-spotify-classification-problem-2024/leaderboard))
+5. [Competition results]((https://www.kaggle.com/competitions/cs9856-spotify-classification-problem-2024/leaderboard)
 - Hard-voting classifier accuracy: 57.14% <= co-2nd place results 
 - Soft-voting classifier accuracy: 53.57%
 
 Additional note: 
 1. On grouping the labels to enhance classification results
 
-On close inspection of the 88 genres, we see multiple sub-genres of rock, pop, classical, .... many of which only have 1,2 songs. Intuitively, you can't realistically understand a genre after only ever listening to 1 song, so we considered grouping the less represented genres into the more populated genres, like all rock music into a single classic rock, to improve the classification result of the more populated classes, in hope to enhance the overall classification results. We tried this approach in the 6th section of the notebook [label_grouping]([url](https://github.com/trduc97/Spotify_classification/blob/main/label_grouping.ipynb)).
+On close inspection of the 88 genres, we see multiple sub-genres of rock, pop, classical, .... many of which only have 1,2 songs. Intuitively, you can't realistically understand a genre after only ever listening to 1 song, so we considered grouping the less represented genres into the more populated genres, like all rock music into a single classic rock, to improve the classification result of the more populated classes, in hope to enhance the overall classification results. We tried this approach in the 6th section of the notebook [label_grouping](https://github.com/trduc97/Spotify_classification/blob/main/label_grouping.ipynb).
 First, we identify the top genres, then based on the cosine similarity group the less represented genres to the top genres with a certain level of similarity.
 Finally, we use a neural network for an exhaustive classification solution of the genres to test for feasibility. 
 
@@ -51,4 +51,4 @@ The results are overall all  worse with the genres mixed, indicating this will o
   
 2. On applying Spotipy to enrich dataset
 
-Originally, the data was taken from the series of playlists [All Out 50s](https://open.spotify.com/playlist/37i9dQZF1DWSV3Tk4GO2fq),[All Out 60s](https://open.spotify.com/playlist/37i9dQZF1DXaKIA8E7WcJj),[All Out 70s](https://open.spotify.com/playlist/37i9dQZF1DWTJ7xPn4vNaz),[All Out 80s]([url](https://open.spotify.com/playlist/37i9dQZF1DX4UtSsGT1Sbe)),[All Out 90s]([url](https://open.spotify.com/playlist/37i9dQZF1DXbTxeAdrVG2l)),All Out 2000s,All Out 2010s,
+Originally, the data was taken from the series of playlists [All Out 50s](https://open.spotify.com/playlist/37i9dQZF1DWSV3Tk4GO2fq),[All Out 60s](https://open.spotify.com/playlist/37i9dQZF1DXaKIA8E7WcJj),[All Out 70s](https://open.spotify.com/playlist/37i9dQZF1DWTJ7xPn4vNaz),[All Out 80s](https://open.spotify.com/playlist/37i9dQZF1DX4UtSsGT1Sbe),[All Out 90s](https://open.spotify.com/playlist/37i9dQZF1DXbTxeAdrVG2l),[All Out 2000s](https://open.spotify.com/playlist/37i9dQZF1DX4o1oenSJRJd),[All Out 2010s](https://open.spotify.com/playlist/37i9dQZF1DX5Ejj0EkURtP),
