@@ -31,7 +31,7 @@ Ensembled model results:
 - Hard-voting classifier accuracy:  0.5824
 - Soft-voting classifier accuracy:  0.6373
 
-5. [Competition results]((https://www.kaggle.com/competitions/cs9856-spotify-classification-problem-2024/leaderboard)
+5. [Competition results](https://www.kaggle.com/competitions/cs9856-spotify-classification-problem-2024/leaderboard)
 - Hard-voting classifier accuracy: 57.14% <= co-2nd place results 
 - Soft-voting classifier accuracy: 53.57%
 
@@ -49,6 +49,10 @@ We tried different combinations:
 The results are overall all  worse with the genres mixed, indicating this will only reduce the overall available information.
 
   
-2. On applying Spotipy to enrich dataset
+2. On applying Spotipy to enrich the dataset
 
-Originally, the data was taken from the series of playlists [All Out 50s](https://open.spotify.com/playlist/37i9dQZF1DWSV3Tk4GO2fq),[All Out 60s](https://open.spotify.com/playlist/37i9dQZF1DXaKIA8E7WcJj),[All Out 70s](https://open.spotify.com/playlist/37i9dQZF1DWTJ7xPn4vNaz),[All Out 80s](https://open.spotify.com/playlist/37i9dQZF1DX4UtSsGT1Sbe),[All Out 90s](https://open.spotify.com/playlist/37i9dQZF1DXbTxeAdrVG2l),[All Out 2000s](https://open.spotify.com/playlist/37i9dQZF1DX4o1oenSJRJd),[All Out 2010s](https://open.spotify.com/playlist/37i9dQZF1DX5Ejj0EkURtP),
+When using Spotify's API to crawl the data, we can receive very crucial information to aid our task of genre classification, which is the artists' genre. Intuitively, artists will specialised in a small number of genres, which helps narrow down the process significantly (In the end, the use of this information is strictly prohibited within the competition so the results above do not incorporate this info)
+
+Originally, the data was taken from the [dataset](https://www.kaggle.com/datasets/cnic92/spotify-past-decades-songs-50s10s), which was curated from the series of playlists [All Out 50s](https://open.spotify.com/playlist/37i9dQZF1DWSV3Tk4GO2fq),[All Out 60s](https://open.spotify.com/playlist/37i9dQZF1DXaKIA8E7WcJj),[All Out 70s](https://open.spotify.com/playlist/37i9dQZF1DWTJ7xPn4vNaz),[All Out 80s](https://open.spotify.com/playlist/37i9dQZF1DX4UtSsGT1Sbe),[All Out 90s](https://open.spotify.com/playlist/37i9dQZF1DXbTxeAdrVG2l),[All Out 2000s](https://open.spotify.com/playlist/37i9dQZF1DX4o1oenSJRJd),[All Out 2010s](https://open.spotify.com/playlist/37i9dQZF1DX5Ejj0EkURtP)
+
+But the Kaggle dataset does not include the songs' ID key on Spotify, and from the time of the Kaggle dataset's creation on 28/01/2020, the 7 playlists have drastically changed due to changing trend, and until the time of this report, only ~30% of the songs in the dataset remained on the Spotify playlists. This poses a serious issue when crawling the additional data from Spotify's API, since without the original songs' keys, we can easily receive wrong results, such as a remix/remasted/cover. We consider patching the wrong results by creating our playlists for the missing data in the [training](https://open.spotify.com/playlist/1dbT3PmOUwKDeAcPzC0Xne) and [testing](https://open.spotify.com/playlist/5WKqU4AK7KjYWYrKOmRGCv) datasets. 
