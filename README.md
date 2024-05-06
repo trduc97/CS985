@@ -1,6 +1,7 @@
 This notebook was created to compete in Kaggle's [Spotify Classification Problem 2024](https://www.kaggle.com/competitions/cs9856-spotify-classification-problem-2024)
 
 1. Intro
+
 The competition is strictly focused on performing training using the provided 452 songs, with 12 features, to classify the songs into 88 genres. Only feature engineering using the given 12 features is allowed, no form of data enrichment from external sources is permitted. For enrichment solution of the given data, please explore the notebook [spotify_enrich](https://github.com/trduc97/Spotify_classification/blob/main/spotify_enrich.ipynb) which uses the Spotipy library to crawl additional information related to the songs. 
 
 2. EDA 
